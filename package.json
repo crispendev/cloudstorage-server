@@ -46,9 +46,7 @@
     "type-graphql": "^1.1.1",
     "typeorm": "^0.2.37",
     "typescript": "^4.3.5",
-    "uuid": "^8.3.2"
-  },
-  "devDependencies": {
+    "uuid": "^8.3.2",
     "@types/argon2": "^0.15.0",
     "@types/connect-redis": "^0.0.17",
     "@types/cors": "^2.8.12",
