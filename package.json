@@ -12,7 +12,7 @@
     "watch": "tsc -w",
     "dev": "nodemon src/server.ts",
     "start:fast": "ts-node-dev --respawn src/server.ts",
-    "start": "node build/index.js",
+    "start": "node build/server.js",
     "build": "tsc",
     "postinstall": "yarn run build"
   },
