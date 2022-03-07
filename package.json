@@ -10,9 +10,11 @@
   ],
   "scripts": {
     "watch": "tsc -w",
-    "start": "ts-node src/server.ts",
     "dev": "nodemon src/server.ts",
-    "start:fast": "ts-node-dev --respawn src/server.ts"
+    "start:fast": "ts-node-dev --respawn src/server.ts",
+    "start": "node build/index.js",
+    "build": "tsc",
+    "postinstall": "yarn run build"
   },
   "dependencies": {
     "@crispengari/random-verification-codes": "1.0.3",
@@ -46,7 +48,9 @@
     "type-graphql": "^1.1.1",
     "typeorm": "^0.2.37",
     "typescript": "^4.3.5",
-    "uuid": "^8.3.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
     "@types/argon2": "^0.15.0",
     "@types/connect-redis": "^0.0.17",
     "@types/cors": "^2.8.12",
